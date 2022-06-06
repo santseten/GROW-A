@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    border: 2px solid black;
+    height: 170px;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    font-size: 1rem;   
+    background-color: lime;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.logo{
+    width: 160px;
+    position: absolute;
+    left: 20px;
+    
+
+}
+.titulo{
+    position: absolute;
+    left: 35px;
+    
+
+}
+.nav{
+padding-top: 60px;
+}
+
+
+ul{
+    text-align: end;
+ 
+ 
+    
+}
+
+    
+.tamañoyfuente{
+    display: inline-block;
+    
+
+
+
+
+     
+    
+    
+
+
+}
+.header{
+    
+    height: 700px;
+    background-image:url(../imagenes/33bc52128910757.619b25a2b8c91.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+
+   
+}
+
+.video{
+    display:flex;
+    justify-content: center;
+}
+.mensaje{
+    color:black;
+    font: 2em sans-serif;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.fieldset{
+    position: flex;
+}
+
+.formulario{
+    display: inline;
+    position: relative;
+}
+
+.productos{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: ;
+    border: 2px black;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    padding: 1rem;
+    
+}
+
+.hijo{
+    height: 200px;
+    border: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.productos > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*MIS MEDIA QUERIES min-width = desde // max-width = hasta*/
+/* mobile */
+@media screen and (max-width: 425px){
+   .productos {
+       grid-template-columns: repeat(1fr);
+   }
+  
+        
+.hijo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul {
+    display: none;
+}
+}  
+/* tablet */
+@media screen and (min-width: 425px);{
+    .productos {
+        grid-template-columns: repeat(2fr);
+    }
+    
+    
+
+  }
+
+  /* desktop */
+  @media screen and (min-width: 1024px){
+
+    
+    
+  
+    
+  }
+
+    
+
+
+
+     
+
+   
+
+
+
+    
